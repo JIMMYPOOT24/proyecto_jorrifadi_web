@@ -2,8 +2,6 @@
 
 @section('title', 'Jorrifadi | Inicio')
 
-
-
 @section('content')
 
 <!DOCTYPE html>
@@ -18,23 +16,34 @@
 
 {{-- Seccion Imagenes y texto quienes somos  --}}
 
-<section class="bg-gray-800 relative text-white"> 
-  <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDkyMnwwfDF8c2VhcmNofDI0fHxmYXNoaW9uJTIwc2hvb3R8ZW58MHx8fA&ixlib=rb-1.2.1&q=80&w=1080" class="absolute h-full inset-0 object-center object-cover w-full"/>
-  <div class="container mx-auto px-4 py-40 relative"> 
-      <div class="flex flex-wrap -mx-4"> 
-          <div class="px-4 w-full md:w-10/12 lg:w-7/12"> 
-              <h1 class="font-bold mb-4 text-7xl">Titulo 1</h1> 
-              <h4 class="mb-2 text-2xl uppercase">Titulo 2</h4> 
-              <p class="mb-6 text-xl">Texto e informacion</p> 
+<section class="bg-gray-800 relative text-white  "> 
+  <a class="class " href="/"  >
+    <img class="absolute h-full inset-0 object-center object-cover w-full opacity-70 " src= "{{ url('recursos/Slaiders.jpg') }}" alt="fondo seccion"/>
+     </a> 
+     
+ <div class="container mx-auto px-8 py-10 relative"> 
+   <h1 class=" text-center font-bold mb-5 text-5xl">NOSOTROS CONSTRUIMOS TU SUEÑO</h1> 
+      
+   <div class="flex flex-wrap  -mx-1"> 
+
+          <div class="py-20 px-7 w-full md:w-10/12 lg:w-7/12"> 
+
+              <h4 class="mb-1 text-3xl font-semibold uppercase">¿QUIENES SOMOS?</h4> 
+              <h4 class="mb-4  text-5xl text-yellow-600 uppercase">________</h4>
+              <p class="mb-6 text-xl font-semibold">@foreach ($datos as $dato)
+                  
+                {{$dato->descripcion}}
+              @endforeach</p> 
+              
               
 
               <!--Inicia  Boton -->
 
-     <div class="container ">
-      <div class="relative h-32 w-90 ...">
-        <div class="absolute bottom-15 right-0 h-16 w-90 ...">
-          <button class="font-bold uppercase px-8 py-3 rounded bg-yellow-500 hover:bg-red-700 hover:text-white max-w-max shadow-sm hover:shadow-lg">CURRICULUM</button>
-          <button class="font-bold border-2 border-white uppercase px-8 py-3 rounded hover:bg-red-700 hover:text-white max-w-max shadow-sm hover:shadow-lg">CONÓCENOS</button>
+     <div class="container justify-center ">
+      <div class="relative h-32 w-90">
+        <div class="absolute bottom-15 right-0 h-16 w-90">
+          <button class="font-bold border-2 border-white uppercase px-8 py-3 rounded bg-yellow-500 hover:bg-blue-900 hover:text-white max-w-max shadow-sm hover:shadow-lg">CURRICULUM</button>
+          <button class="font-bold border-2 border-white uppercase px-8 py-3 rounded hover:bg-blue-900 hover:text-white max-w-max shadow-sm hover:shadow-lg">CONÓCENOS</button>
         </div>
       </div>
     </div>
@@ -54,7 +63,7 @@
 
 <section>
 
-<div class="py-8 bg-gray-200">
+<div class="py-8 ">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
         
@@ -162,9 +171,9 @@
 {{-- Termina Seccion principales servicios--}}
 
   {{-- Nuestros clientes --}}
-  <section>
+  <section class="bg-white ">
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
 
     <div class="lg:text-center">
         
@@ -173,18 +182,25 @@
             Nuestros clientes
 
         </p>
+        <h4 class="mb-4  text-5xl text-yellow-600 uppercase">______</h4>
       </div>
 
 
   <div class="flex ">
-    <div class="flex-1 ">1</div>
+    
     <div class="contents">
-      <div class="flex-1 ...">2</div>
-      <div class="flex-1 ...">3</div>
+      <div class="flex-3 "> <img class="" src= "{{ url('recursos/logo-hotel-maroma.jpg')}}" alt="hotel-maroma"></div>
+      <div class="flex-3 "> <img class="" src= "{{ url('recursos/logo-kaua.jpg') }}" alt="hotel-kaua"></div>
+      <div class="flex-3 "> <img class="" src= "{{ url('recursos/logo-hotel-akumal.jpg') }}" alt="hotel-akumal"></div>
+      <div class="flex-3 "> <img class="" src= "{{ url('recursos/logo-came.jpg') }}" alt="hotel-came"></div>
+    
     </div>
-    <div class="flex-1 ...">4</div>
   </div>
+  
+
 </div>
+<br>
+
 </section>
 {{-- termina Nuestros clientes --}}
 
@@ -199,6 +215,17 @@
               <h1 class="font-bold text-5xl text-center">¿Quienes somos?</h1>
           </div>
       </div>
+
+      <div class="container ">
+        <div class="relative h-32 w-90 ...">
+            <div class="absolute bottom-0 right-0 h-16 w-80 ...">
+                <button class="uppercase px-8 py-4 rounded  font-semibold bg-blue-700 text-blue-50 max-w-max shadow-sm hover:shadow-lg">Ver mas</button>
+            </div>
+          </div>
+            
+    </div>
+
+
   </div>
 </section>
 

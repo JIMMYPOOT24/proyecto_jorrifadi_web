@@ -15,7 +15,7 @@
     {{-- nav --}}
 
         
-        <nav class="flex items-center justify-between flex-wrap bg-white p-8 fixed w-full z-10 top-0">
+        <nav class="flex items-center justify-between flex-wrap bg-white p-8 fixed w-full z-10 top-0 shadow-xl">
             <div class="flex items-center flex-shrink-0 text-white mr-6" >
                 
                 <a href="/" class="class">
@@ -44,7 +44,7 @@
                         <a class="inline-block text-yellow-500 no-underline hover:text-black hover:text-underline py-2 px-4" href="{{route('proyectos')}}">Proyectos</a>
                     </li>
                     <li class="mr-3">
-                        <a class="inline-block text-yellow-500 no-underline hover:text-black hover:text-underline py-2 px-4" href="{{route('contactanos')}}">Contactanos</a>
+                        <a class="inline-block text-yellow-500 no-underline hover:text-black hover:text-underline py-2 px-4" href="{{route('contactanos')}}">Contáctanos</a>
                     </li>
                     
                 
@@ -83,52 +83,57 @@
     
 </body>
 
-  {{-- Footer --}}
+     {{-- Footer --}}
 
-  <footer class="footer bg-gray-300 relative pt-6 ">
-    <div class="container mx-auto px-2">
-
-        <div class="sm:flex sm:mt-auto">
-            <div class=" mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between"> 
-                <img class="h-35 w-60 self-center text-black" src= "{{ url('images/JORRIFADI_LOGO.png') }}" alt="Logotipo Empresa">
-            
-                <div class="flex flex-col">
-                    <span class="font-bold text-blue-800 uppercase  mb-2">Nuestra Empresa</span>
-                    <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500"  >Inicio</a></span>
-                    <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >¿Quienes somos?</a></span>
-                    <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Servicios</a></span>
-                    <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Proyectos</a></span>
-                    <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Contactos</a></span>
-                </div>
+     <footer class="footer bg-gray-300 relative pt-6 ">
+        <div class="container mx-auto px-2">
+    
+            <div class="sm:flex sm:mt-auto">
+                <div class=" mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between"> 
+                    <img class="h-35 w-60 self-center text-black" src= "{{ url('recursos/logo-jorrifadi.png') }}" alt="Logotipo Empresa">
                 
-                <div class="flex flex-col">
-                    <span class="font-bold text-blue-800 uppercase mt-4 md:mt-0 mb-2">Servicios</span>
-                    <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Proyectos ejecutivos</b></span>
-                    <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Contrucción y/o remodelaciones en general</a></span>
-                    <span class="my-1"><a href="#" class="text-Black-700  text-md  hover:text-yellow-500" >Ejecucion y supervisión de obras </a></span>
-                    <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Trámites ante entidades municipales, estatales y federales<a></span>
-                    <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Unidad de verificación de instalaciones eléctrica<a></span>
-                    <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Servicio de asesoría</a></span>
-                    <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Venta e instalación de material eléctrico</a></span>
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-bold text-blue-800 uppercase mt-4 md:mt-0 mb-2">Contactanos</span>
-                    <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >044 (998) 1022645</a></span>
-                    <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Direccion@jorrifadi.com</a></span>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-blue-800 uppercase  mb-2">Nuestra Empresa</span>
+                        <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500"  >Inicio</a></span>
+                        <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >¿Quienes somos?</a></span>
+                        <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Servicios</a></span>
+                        <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Proyectos</a></span>
+                        <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Contactos</a></span>
+                    </div>
+                    
+                    <div class="flex flex-col">
+                        <span class="font-bold text-blue-800 uppercase mt-4 md:mt-0 mb-2">Servicios</span>
+                        <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Proyectos ejecutivos</b></span>
+                        <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Contrucción y/o remodelaciones en general</a></span>
+                        <span class="my-1"><a href="#" class="text-Black-700  text-md  hover:text-yellow-500" >Ejecucion y supervisión de obras </a></span>
+                        <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Trámites ante entidades municipales, estatales y federales<a></span>
+                        <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Unidad de verificación de instalaciones eléctrica<a></span>
+                        <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Servicio de asesoría</a></span>
+                        <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Venta e instalación de material eléctrico</a></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-blue-800 uppercase mt-4 md:mt-0 mb-2">Contactanos</span>
+                        <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >044 (998) 1022645</a></span>
+                        <span class="my-1"><a href="#" class="text-Black-700  text-md hover:text-yellow-500" >Direccion@jorrifadi.com</a></span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container mx-auto px-8">
-        <div class="mt-5 border-t-2 border-yellow-500 flex flex-col items-center">
-            <div class="sm:w-3/4 text-center py-5">
-                <p class="text-sm text-black-700 font-bold mb-2">
-                    © 2021 Jodifarri Instalación y Proyectos  S.A. de C.V. ​Todos los Derechos Reservados.
-                </p>
+        
+        <div class=" bg-yellow-500 mx-auto px-5">
+            <div class="mt-5  flex flex-col items-center">
+                <div class="sm:w-2/4 text-center py-5">
+                    <h1 class="text-sm text-black-700 font-bold mb-2">
+                        © 2021 Jodifarri Instalación y Proyectos  S.A. de C.V. ​Todos los Derechos Reservados.
+                    </h1>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+       
+
+
+        
+    </footer>
 
 {{-- Termina Footer --}}
 </html>

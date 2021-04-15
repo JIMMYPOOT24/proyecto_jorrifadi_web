@@ -10,6 +10,7 @@ class HomeController extends Controller
     public function __invoke(){
 
         $datos = mdatosempresa::all();
+    
        
         return view('home', compact('datos'));
 

@@ -1,3 +1,5 @@
+
+/* Boton flotante WhatsApp */
 .float{
 	position:fixed;
 	width:60px;
@@ -22,3 +24,5 @@
 .my-float{
 	margin-top:16px;
 }
+
+/* Termina el boton flotante */
